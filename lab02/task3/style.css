@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #24292f;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px 60px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #57606a;
+}
+
+.cta {
+    padding: 14px 28px;
+    background: #24292f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pricing {
+    padding: 60px 20px;
+}
+
+.pricing-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 14px;
+    color: #57606a;
+
+}
+
+.card button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d0d7de;
+    background: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.card button.dark {
+    background: #24292f;
+    color: white;
+    border: none;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.featured {
+    border: 2px solid #0969da;
+    position: relative;
+}
+
+.badge {
+     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;              
+    height: 28px;
+    background: #0969da;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 28px;       
+    border-radius: 6px 6px 0 0; 
+}
+
+
+.addons {
+    padding: 60px 20px 80px;
+    text-align: center;
+}
+
+.addons h2 {
+    margin-bottom: 40px;
+}
+
+.addons-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.addon {
+    border: 1px solid #d0d7de;
+    padding: 30px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .pricing-grid,
+    .addons-grid {
+        grid-template-columns: 1fr;
+    }
+}
