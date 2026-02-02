@@ -138,9 +138,4 @@ body {
     font-weight: 500;
 }
 
-@media (max-width: 900px) {
-    .pricing-grid,
-    .addons-grid {
-        grid-template-columns: 1fr;
-    }
-}
+
