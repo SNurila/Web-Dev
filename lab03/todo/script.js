@@ -14,7 +14,11 @@ function addTask() {
   const span = document.createElement("span");
   span.textContent = text;
 
-  li.append(circle, span);
+  const del = document.createElement("button");
+  del.textContent = "✕";
+  del.className = "delete";
+
+  li.append(circle, span, del);
   document.getElementById("task-list").appendChild(li);
 
   input.value = "";
@@ -23,4 +27,6 @@ function addTask() {
     circle.classList.toggle("done");
     document.getElementById("task-list").prepend(li);
   };
+
+  del.onclick = () => li.remove();
 }
