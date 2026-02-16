@@ -1,0 +1,29 @@
+<div class="card">
+  <img [src]="selectedImage" width="200">
+
+  <h3>{{ product.name }}</h3>
+  <p>{{ product.description }}</p>
+
+  <p><b>{{ product.price }} KZT</b></p>
+
+  <p>
+    <span *ngFor="let star of [1,2,3,4,5]">
+      {{ star <= product.rating ? '⭐' : '☆' }}
+    </span>
+  </p>
+
+  <a [href]="product.link" target="_blank">
+    View Details
+  </a>
+
+  <button (click)="share()">Share</button>
+
+  <div>
+    <img
+      *ngFor="let img of product.images"
+      [src]="img"
+      width="50"
+      style="margin:5px; cursor:pointer"
+      (click)="changeImage(img)">
+  </div>
+</div>
