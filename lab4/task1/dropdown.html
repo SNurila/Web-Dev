@@ -1,0 +1,13 @@
+<!-- Static options -->
+<select [formField]="form.country">
+  <option value="">Select a country</option>
+  <option value="us">United States</option>
+  <option value="ca">Canada</option>
+</select>
+<!-- Dynamic options with @for -->
+<select [formField]="form.productId">
+  <option value="">Select a product</option>
+  @for (product of products; track product.id) {
+    <option [value]="product.id">{{ product.name }}</option>
+  }
+</select>

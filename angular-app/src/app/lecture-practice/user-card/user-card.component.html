@@ -1,0 +1,9 @@
+<input [(ngModel)]="username" placeholder="Enter name">
+<p>Hello, nice to see you, {{ username }}!</p>
+
+<button (click)="Greet()">Greeting</button>
+
+<app-child
+  [message]="'Hello from parent'"
+  (notify)="getData($event)">
+</app-child>
