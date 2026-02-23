@@ -1,0 +1,11 @@
+<h1 class="title">Online Store</h1>
+
+<div class="category-buttons">
+  <button
+    *ngFor="let category of categories"
+    (click)="selectCategory(category.id)">
+    {{ category.name }}
+  </button>
+</div>
+
+<app-product-list [products]="selectedProducts"></app-product-list>
