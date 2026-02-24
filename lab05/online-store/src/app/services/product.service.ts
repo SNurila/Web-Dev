@@ -10,7 +10,9 @@ export class ProductService {
   categories: Category[] = [
     { id: 1, name: 'Phones' },
     { id: 2, name: 'Laptops' },
-    { id: 3, name: 'Accessories' }
+    { id: 3, name: 'Accessories' },
+    { id: 4, name: 'Watches' },
+    { id: 5, name: 'Phone Cases' }
   ];
 
   products: Product[] = [
@@ -120,6 +122,57 @@ export class ProductService {
       link: 'https://kaspi.kz/shop/search/?text=iPhone%2017%20air&q=%3AavailableInZones%3AMagnum_ZONE1&sort=relevance&filteredByCategory=false&sc=',
       likes: 0,
       categoryId: 1
+    }
+    ,
+    {
+      id: 9,
+      name: 'iPhone 13 Pro Transparent Case',
+      description: 'Чехол для Apple iPhone 13 прозрачный',
+      price: 10,
+      rating: 5,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/h5c/hec/86261115060254.png?format=preview-large',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/h5c/hec/86261115060254.png?format=preview-large'],
+      link: 'https://kaspi.kz/shop/p/chehol-dlja-apple-iphone-13-prozrachnyi-106185651/?c=750000000',
+      likes: 0,
+      categoryId:5
+    },
+    {
+      id:10,
+      name: 'Apple Watch Series 7',
+      description: 'Умные часы Apple Watch Series 7 41 мм алюминий синий',
+      price: 150000,
+      rating: 5,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/p00/p18/7079036.png?format=preview-large',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/p00/p18/7079036.png?format=preview-large'],
+      link: 'https://kaspi.kz/shop/p/apple-watch-series-7-41-mm-aluminium-sinii-113518221/?c=750000000',
+      likes: 0,
+      categoryId:4
+    },
+    {
+      id:11,
+      name: 'Apple Watch Series 11',
+      description: 'Смарт-часы Apple Watch Series 11 M/L 46 мм черный',
+      price: 220000,
+      rating: 5,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/p89/pba/64468961.png?format=gallery-medium',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/p89/pba/64468961.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p6d/pba/64468962.png?format=gallery-medium'
+      ],
+      link: 'https://kaspi.kz/shop/p/apple-watch-series-11-m-l-46-mm-chernyi-145555823/?c=750000000',
+      likes: 0,
+      categoryId:4
+    },
+    {
+      id:12,
+      name: 'Iphone 17 case',
+      description: 'Чехол для Apple iPhone 17',
+      price: 200,
+      rating: 4,
+      image: 'https://resources.cdn-kaspi.kz/img/m/p/p18/p66/98651568.jpeg?format=gallery-medium',
+      images: ['https://resources.cdn-kaspi.kz/img/m/p/p18/p66/98651568.jpeg?format=gallery-medium'],
+      link: 'https://kaspi.kz/shop/p/chehol-casesh-dlja-apple-iphone-17-pro-max-temno-zelenyi-155343301/?c=750000000',
+      likes: 0,
+      categoryId:5
     }
   ];
 
