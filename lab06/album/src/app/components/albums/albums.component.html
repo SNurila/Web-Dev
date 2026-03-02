@@ -1,0 +1,24 @@
+<h2 class="page-title">Albums</h2>
+
+<div *ngIf="isLoading" class="loading">
+  Loading albums...
+</div>
+
+<div *ngIf="!isLoading && albums.length === 0" class="empty">
+  No albums available.
+</div>
+
+<div class="albums-grid" *ngIf="!isLoading">
+  <div class="album-card" *ngFor="let album of albums">
+    
+    <div class="album-info" [routerLink]="['/albums', album.id]">
+      <h3>#{{ album.id }}</h3>
+      <p>{{ album.title }}</p>
+    </div>
+
+    <button class="delete-btn" (click)="deleteAlbum(album.id)">
+      Delete
+    </button>
+
+  </div>
+</div>

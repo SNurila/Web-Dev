@@ -1,0 +1,36 @@
+<div *ngIf="isLoading" class="loading">
+  Loading album...
+</div>
+
+<div *ngIf="!isLoading && album" class="detail-wrapper">
+
+  <div class="detail-card">
+    
+    <h2>Album Details</h2>
+
+    <div class="detail-row">
+      <span class="label">ID</span>
+      <span class="value">{{ album.id }}</span>
+    </div>
+
+    <div class="detail-row">
+      <span class="label">User ID</span>
+      <span class="value">{{ album.userId }}</span>
+    </div>
+
+    <div class="detail-row">
+      <span class="label">Title</span>
+      <input [(ngModel)]="album.title" />
+    </div>
+
+    <div class="button-group">
+      <button class="primary" (click)="save()">Save</button>
+      <button class="secondary" [routerLink]="['/albums', album.id, 'photos']">
+        View Photos
+      </button>
+      <button class="ghost" (click)="goBack()">Back</button>
+    </div>
+
+  </div>
+
+</div>
